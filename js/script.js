@@ -42,11 +42,11 @@ $(function() {
     
     /* 有参数，启动百度教程 */
     if(!!query) {
-        $tips.html('让我来教你正确的打开方式');
+        $tips.html('我来教你正确的打开方式');
         $stop.fadeIn();
         
         stepTimeout = setTimeout(function() {
-            $tips.html('1、找到输入框并选中');
+            $tips.html('1、找到输入框并选中它');
             
             $arrow.removeClass('active').show().animate({
                 left: $kw.offset().left + 20 + 'px',
@@ -69,7 +69,7 @@ $(function() {
                                 left: $searchSubmit.offset().left + $searchSubmit.width()  / 2 + 'px',
                                 top:  $searchSubmit.offset().top  + $searchSubmit.height() / 2 + 'px'
                             }, 1000, function () {
-                                $tips.html('<strong>怎么样，学会了吗？</strong>');
+                                $tips.html('<strong>怎么样，你学废了吗？</strong>');
                                 $arrow.addClass('active');
                                 
                                 stepTimeout = setTimeout(function () {
